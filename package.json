@@ -1,0 +1,16 @@
+{
+  
+  "name": "glados",
+  "version": "1.1.2",
+  "description": "de glados bot!!!1",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Enderman842",
+  "license": "All rights reserved, i guess",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^12.2.0"
+  }
+}
