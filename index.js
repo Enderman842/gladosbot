@@ -154,7 +154,7 @@ bot.on('message', (message) => {
         message.channel.send("████▄█▌▄▌▄▐▐▌▀███▄▄█▌");
         message.channel.send("▄▄▄▄▄██████████████▀");
     }
-    if(message.content == 'Warning! Central Core in 80% corrupt!'){
+    if(message.content == 'Warning! Central Core is 80% corrupt!'){
         message.channel.send("That's funny, I don't feel corrupt, in fact I feel pretty good!");
     }
     if(message.content == '$singthefnafsong'){
