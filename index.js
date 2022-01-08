@@ -165,9 +165,8 @@ bot.on('message', (message) => {
         message.channel.send('THE END');
     }
     if (message.content == config.prefix + 'ggllaaddooss') {
-        message.channel.send("Hello! it's me, Enderman842. The creator of the GLaDOS-Bot");
-        message.channel.send('Enderman842 on YouTube: https://www.youtube.com/channel/UCPIgkbtrhRjEsN46XZSfUnA');
-        message.channel.send('My Discord-Server: http://discord.gg/yTv2NkJ')
+        message.channel.send("Hello! it's me, puxped. The creator of the GLaDOS-Bot");
+        message.channel.send('learn more: https://enderman842.github.io');
     }
     if (message.content == config.prefix + 'cake') {
         message.channel.send('Want some cake?', { file: 'https://3.bp.blogspot.com/_cd6_MFUGTUE/TI-qhkYbt0I/AAAAAAAAAV8/wJHhnJVi8Lo/s1600/the_cake_is_a_lie_portal.jpg' });
@@ -213,64 +212,6 @@ bot.on('message', (message) => {
             .addField("Line4");
         message.channel.send(testEmbed);
     }
-    if (message.content == config.prefix + 'ping_uk') {
-        let uk = message.guild.members.get('671937135305162768');
-        message.channel.send(`${uk}`)
-    }
-    /*if(message.content == config.prefix +  "ping_enderman"){
-        let enderman = message.guild.members.get('279673328241737728');
-        message.channel.send(`${enderman}`)
-    }*/
-    /*if (message.content == config.prefix + "ping_owner") {
-        let owner = message.guild.members.get(message.guild.ownerID);
-        message.channel.send(`${owner}`);
-    }*/
-    /*if (message.content.startsWith(config.prefix + 'kick')) {
-        const kUser = message.mentions.users.first();
-        if (user) {
-            const kMember = message.guild.member(kUser);
-            if (kMember) {
-                kMember
-                    .kick('Optional reason that will display in the audit logs')
-                    .then(() => {
-                        message.reply(`Successfully kicked ={kUser.tag}`);
-                    })
-                    .catch(err => {
-                        message.reply('Unable to kick member');
-                        console.error(err);
-                    });
-            } else {
-                message.reply("Unable to find user!");
-            }
-        } else {
-            message.reply("You didn't mention the user to kick!");
-        }
-    }*/
-    /*if(message.content == config.prefix +  "change_uks_nickname ", nick){
-        let nick;
-        message.channel.send(`<@={message.guild.ownerID}>`);
-        message.guild.owner.setNickname(nick);
-    }*/
-    /*if (message.content == config.prefix + "unban_goofmeister") {
-        let goofUnban = new Discord.MessageEmbed()
-            .setTitle("Unbanned Goofmeister#7228")
-            .setDescription("Goofmeister#7228 has been unbanned by someone")
-            .setColor("#238F5F");
-        message.guild.members.unban("330740660921434122")
-            .then(user => console.log(`Unbanned ${user.username} from ${guild}`))
-            .catch(console.error);
-        message.channel.send(goofUnban);
-    }
-    if (message.content == config.prefix + "ban_goofmeister") {
-        let goofBan = new Discord.MessageEmbed()
-            .setTitle("Banned Goofmeister#7228")
-            .setDescription("Goofmeister#7228 has been banned by someone")
-            .setColor("#FF0000")
-        message.guild.members.ban('330740660921434122')
-            .then(user => console.log(`banned ${user.username} from ${guild}`))
-            .catch(console.error);
-        message.channel.send(goofBan);
-    }*/
     if (message.content == config.prefix + "latency") {
         message.channel.send("Pinging...").then(msg => {
             var ping = msg.createdTimestamp - message.createdTimestamp;
@@ -280,9 +221,6 @@ bot.on('message', (message) => {
     }
     if (message.content == config.prefix + "letter ß") {
         message.channel.send("The 'ß' is a letter in the german alphabet. It gets pronounced as 'Eszett' (S-Z [ɛsˈtsɛt]) or 'Sharp S', colloquially also as 'Double S'. The ß is used as the voiceless s-sound. It is the only letter of the latin alphabet today, that is only used in german languages and their dialects.");
-    }
-    if (message.content == config.prefix + "haha") {
-        message.channel.send("<a:lmao:750648479138840586>");
     }
     if (message.content == config.prefix + "glados_version") {
         message.channel.send("GLaDOS-Bot Version 2.2");
