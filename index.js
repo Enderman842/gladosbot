@@ -198,12 +198,11 @@ bot.on('message', (message) => {
     }
     if (message.content == config.prefix + 'singthefnafsong') {
         message.channel.send("Ok, fine.");
-        message.channel.send("We're waiting every Night to finally roam and invite, newcomers to play with us... For many years, we've been all alone, we're forced to be still and play the same songs we've known since that day. An imposter took our life away, now we're stuck here to decay. Please let us get in, don't lock us away, we're not that what you're thinking. We're poor little souls, who have lost all control and we're forced here to take that role. We've been all alone, stuck here in our little zone since 1987. Join us, be our friend, or just be stuck and defend, after all you only got: Five Nights at Freddy's. Is this where you want to be? I just dont get it, why do you want to stay? Five Nights at Freddy's We're really quite suprised, we get to see you another night, you should have looked for another job, you should have saild to this place goodbye. it's like there's so much more, maybe you've been in this place before, we remember a face like yours, you seem acquainted with those doors. Please let us get in, don't lock us away, we're not that what you're thinking. we're poor little sounls who have lost all control and we're forced here to take that role. We've been all alone, stuck here in our little zone, since 1987. Join us, be our friend, or just be stuck and defend. After all you've only got: Five Nights at Freddy's Is this where you want to be? I just don't get it, why do you want to stay? Five Nights at Freddy's" + " THE END");
+        message.channel.send("We're waiting every Night to finally roam and invite, newcomers to play with us... For many years, we've been all alone, we're forced to be still and play the same songs we've known since that day. An imposter took our life away, now we're stuck here to decay. Please let us get in, don't lock us away, we're not that what you're thinking. We're poor little souls, who have lost all control and we're forced here to take that role. We've been all alone, stuck here in our little zone since 1987. Join us, be our friend, or just be stuck and defend, after all you only got: Five Nights at Freddy's. Is this where you want to be? I just dont get it, why do you want to stay? Five Nights at Freddy's We're really quite suprised, we get to see you another night, you should have looked for another job, you should have saild to this place goodbye. it's like there's so much more, maybe you've been in this place before, we remember a face like yours, you seem acquainted with those doors. Please let us get in, don't lock us away, we're not that what you're thinking. we're poor little sounls who have lost all control and we're forced here to take that role. We've been all alone, stuck here in our little zone, since 1987. Join us, be our friend, or just be stuck and defend. After all you've only got: Five Nights at Freddy's Is this where you want to be? I just don't get it, why do you want to stay? Five Nights at Freddy's...");
         message.channel.send("There.");
     }
     if (message.content == config.prefix + "rich_embed_test") {
-        let goofmeister = message.guild.members.get('330740660921434122');
-        let testEmbed = new Discord.RichEmbed()
+        let testEmbed = new Discord.MessageEmbed()
             .setTitle("Rich Embed Test")
             .setDescription("This is a tæst!!!!")
             .setColor("#238F5F")
@@ -222,11 +221,11 @@ bot.on('message', (message) => {
         let enderman = message.guild.members.get('279673328241737728');
         message.channel.send(`${enderman}`)
     }*/
-    if (message.content == config.prefix + "ping_owner") {
+    /*if (message.content == config.prefix + "ping_owner") {
         let owner = message.guild.members.get(message.guild.ownerID);
         message.channel.send(`${owner}`);
-    }
-    if (message.content.startsWith(config.prefix + 'kick')) {
+    }*/
+    /*if (message.content.startsWith(config.prefix + 'kick')) {
         const kUser = message.mentions.users.first();
         if (user) {
             const kMember = message.guild.member(kUser);
@@ -246,13 +245,13 @@ bot.on('message', (message) => {
         } else {
             message.reply("You didn't mention the user to kick!");
         }
-    }
+    }*/
     /*if(message.content == config.prefix +  "change_uks_nickname ", nick){
         let nick;
         message.channel.send(`<@={message.guild.ownerID}>`);
         message.guild.owner.setNickname(nick);
     }*/
-    if (message.content == config.prefix + "unban_goofmeister") {
+    /*if (message.content == config.prefix + "unban_goofmeister") {
         let goofUnban = new Discord.MessageEmbed()
             .setTitle("Unbanned Goofmeister#7228")
             .setDescription("Goofmeister#7228 has been unbanned by someone")
@@ -271,7 +270,7 @@ bot.on('message', (message) => {
             .then(user => console.log(`banned ${user.username} from ${guild}`))
             .catch(console.error);
         message.channel.send(goofBan);
-    }
+    }*/
     if (message.content == config.prefix + "latency") {
         message.channel.send("Pinging...").then(msg => {
             var ping = msg.createdTimestamp - message.createdTimestamp;
@@ -286,7 +285,15 @@ bot.on('message', (message) => {
         message.channel.send("<a:lmao:750648479138840586>");
     }
     if (message.content == config.prefix + "glados_version") {
-        message.channel.send("GLaDOS-Bot Version 1.2");
+        message.channel.send("GLaDOS-Bot Version 2.2");
+    }
+    if (message.content == config.prefix + "pfp"){
+        const embed = new Discord.MessageEmbed()
+        .setTitle("WANTED")
+        .setColor("#FF0000")
+        .setImage(message.author.avatarURL())
+        .setTimestamp();
+        message.channel.send(embed);
     }
 });
 bot.login(config.token);
